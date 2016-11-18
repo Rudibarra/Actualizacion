@@ -72,7 +72,6 @@ header .brand-image {
   background: rgba(0, 169, 224, 0.13);
   border-radius: 3px;
   margin: 0 0 10px 0;
-  float: left;
   width: 100%;
 }
 .workspace .btns-container {
@@ -130,6 +129,22 @@ header .brand-image {
 .workspace .active-c {
   background: #00549f;
   color: #FFFFFF;
+}
+.workspace .payment {
+  display: block;
+  width: 100%;
+  border: 1px solid red;
+  text-align: center;
+}
+.workspace .payment .btn-pay {
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 20px 0 0 0;
+  border: none;
+  color: #989898;
 }
 .panel-group .panel + .panel {
   margin-top: 0;
