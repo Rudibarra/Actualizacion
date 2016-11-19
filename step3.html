@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Step3</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/costume-layout.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <header class="clearfix">
+      <div class="container">
+        <div class="brand-image pull-left clearfix">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <h1 class="current-step pull-right">
+          <span class="step-number">Paso 3.</span>
+          <span class="step-name">Firma de Contrato</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="workspace clearfix">
+          <p class="caption">
+            Contamos con flexibilidad de planes a la medida de tu negocio. Elige el esquema que más se adapte a tus necesidades:
+          </p>
+
+          <div class="col-sm-12">
+            <div class="row top">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Firma de Contrato</a></li>
+                <li><a data-toggle="tab" href="#menu1">Términos y condiciones</a></li>
+                <li><a data-toggle="tab" href="#menu2">Contrato de Adhesión</a></li>
+                <li><a data-toggle="tab" href="#menu3">Aviso de Privacidad</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <p>
+                    Por disposición oficial se requiere la aceptación de las condiciones con su e-firma (antes FIEL). 
+                    La aceptación de los presentes representa el conocimiento y acuerdo en los precios, reglas, y condiciones definidas en cada documento.
+                  </p>
+
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Aviso de Privacidad</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Términos y Condiciones</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Contrato de Adhesión</label>
+                  </div>
+
+                  <p><b>¿Cuenta con representante legal?</b></p>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio">Sí
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio" checked>No
+                  </label>
+
+                  <div class="representant">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Actos</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Fecha otorgamiento de poderes</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Estado</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Nombre de Notario o Corredor Público que otorgo dichos poderes</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Número de Notario o Corredor Público que otorgo dichos poderes</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Folio electrónico mercantil del Registro Público de Comercio</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                <div class="representant bordes-no-copiar">
+                  <h2>/*CAMPOS PERSONA  FíSICA (no agregar este título ni el marco rojo)*/</h2>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <div class="form-group">
+                          <label>Edad</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>RFC</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Correo electrónico</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label>Representante Legal o Apoderado</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Nombre</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Actos</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Fecha otorgamiento de poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>estado</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre de Notario o Corredor Público que otorgo dichos poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre de Notario o Corredor Público que otorgo dichos poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Folio electrónico mercantil del Registro Público de Comercio</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--<div class="text-fill">
+                      <p>
+                        Ser una persona física de nacionalidad mexicana, que se identifica con <input type="text" class="form-control control-width"> tener <input type="text" class="form-control control-width"> años de edad, con RFC <input type="text" class="form-control control-width">, correo electrónico <input type="text" class="form-control control-width"> y de conformidad a lo señalado por el artículo 22 del Código Civil Federal (CCF) tiene la capacidad jurídica para celebrar el presente contrato por su propio derecho o siendo su representante legal y/o apoderado<input type="text" class="form-control control-width">, con poder para actos de <input type="text" class="form-control control-width">, de fecha<input type="text" class="form-control control-width">otorgada ante la fe del Lic. <input type="text" class="form-control control-width">, <input type="text" class="form-control control-width">, del <input type="text" class="form-control control-width">, inscrito bajo el folio No. <input type="text" class="form-control control-width"> del Registro Público del Comercio. (de ser el caso que esté inscrito).
+                      </p>
+                    </div>-->
+                  </form>
+                </div>
+
+
+
+                <div class="representant bordes-no-copiar">
+                  <h2>/*CAMPOS PERSONA MORAL(no agregar este título ni el marco rojo)*/</h2>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Número de Escritura Pública o de Póliza</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Fecha de la escritura pública</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre del Notario o Corredor Público que firmo la escritura pública</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre del Notario o Corredor Público</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Estado</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Folio electrónico mercantil del Registro Público de Comercio</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>RFC de la persona moral</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre de Representante de la empresa</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Número de escritura del poder del RL</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Actos que puede ejecutar (Administración o pleitos y cobranzas)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Fecha de otorgamiento de poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Nombre de Notario o Corredor Público que otorgo dichos poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Número de Notario o Corredor Público que otorgo dichos poderes</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label>Estado</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-9">
+                        <div class="form-group">
+                          <label>Folio electrónico mercantil del Registro Público de Comercio (igual al punto 6)</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--<div class="text-fill"> 
+                      <p>
+                        Ser persona moral, constituida mediante escritura pública o póliza No.<input type="text" class="form-control control-width">, de fecha <input type="text" class="form-control control-width">, otorgada ante la fe del Lic. <input type="text" class="form-control control-width">, notario o Corredor Público No. <input type="text" class="form-control control-width">, del <input type="text" class="form-control control-width"> inscrito bajo el folio No. <input type="text" class="form-control control-width">, del Registro Público del Comercio, con RFC <input type="text" class="form-control control-width">, representado en este acto por <input type="text" class="form-control control-width">, quien acredita su personalidad con <input type="text" class="form-control control-width"> para actos de <input type="text" class="form-control control-width">, de fecha <input type="text" class="form-control control-width">otorgada ante la fe del Lic. <input type="text" class="form-control control-width">, <input type="text" class="form-control control-width">, del <input type="text" class="form-control control-width">, inscrito bajo el folio No. <input type="text" class="form-control control-width"> del Registro Público del Comercio, de conformidad con lo establecido por el artículo XIX del Código Fiscal de la Federación (CFF). 
+
+                      </p>
+                    </div>-->
+                  </form>
+                </div>
+
+
+
+
+
+
+
+                  <div class="col-sm-12">
+                    <div class="row"><div class="divider01"></div></div>
+                  </div>
+
+                  <div class="file-uploads clearfix">
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Certificado FIEL (.cer)</label>
+                            <input type="file" id="file"  class="form-control" name="myfiles[]"  />
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>LLave Privada(.key)</label>
+                            <input type="file" id="file"  class="form-control" name="myfiles[]"  />
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Contraseña</label>
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="menu1" class="tab-pane fade">
+                  <iframe src="" frameborder="0" width="100%" height="700">
+                    
+                  </iframe>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <iframe src="" frameborder="0" width="100%" height="700">
+                    
+                  </iframe>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <iframe src="" frameborder="0" width="100%" height="700">
+                    
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="btns-container clearfix">
+            <button class="btn btn-default btn-back pull-left">
+              Regresar
+            </button>
+            <button class="btn btn-default btn-continue pull-right">
+              Continuar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $('.trigger').click(function () {
+            $(this).parents(".circle").addClass("active-c");
+            $('input:not(:checked)').parents(".circle").removeClass("active-c");
+          });
+      });
+
+
+      $(document).ready(function (){
+        $('.btn-pay').click(function(){
+          event.preventDefault();
+          $('.btn-pay').removeClass('active-c');
+          $(this).addClass('active-c');
+        });
+      });
+
+    </script>
+
+
+    <script type="text/javascript">
+      ;(function( $ ) {
+
+        // Browser supports HTML5 multiple file?
+        var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+            isIE = /msie/i.test( navigator.userAgent );
+
+        $.fn.customFile = function() {
+
+          return this.each(function() {
+
+            var $file = $(this).addClass('customfile'), // the original file input
+                $wrap = $('<div class="customfile-wrap">'),
+                $input = $('<input type="text" class="form-control w80" />'),
+                // Button that will be used in non-IE browsers
+                $button = $('<button type="button" class="btn btn-default upload ">Buscar</button>'),
+                // Hack for IE
+                $label = $('<label class="btn btn-default upload  " for="'+ $file[0].id +'">Buscar</label>');
+
+            // Hide by shifting to the left so we
+            // can still trigger events
+            $file.css({
+              position: 'absolute',
+              left: '-9999px'
+            });
+
+            $wrap.insertAfter( $file )
+              .append( $file, $input, ( isIE ? $label : $button ) );
+
+            // Prevent focus
+            $file.attr('tabIndex', -1);
+            $button.attr('tabIndex', -1);
+
+            $button.click(function () {
+              $file.focus().click(); // Open dialog
+            });
+
+            $file.change(function() {
+
+              var files = [], fileArr, filename;
+
+              // If multiple is supported then extract
+              // all filenames from the file array
+              if ( multipleSupport ) {
+                fileArr = $file[0].files;
+                for ( var i = 0, len = fileArr.length; i < len; i++ ) {
+                  files.push( fileArr[i].name );
+                }
+                filename = files.join(', ');
+
+              // If not supported then just take the value
+              // and remove the path to just show the filename
+              } else {
+                filename = $file.val().split('\\').pop();
+              }
+
+              $input.val( filename ) // Set the value
+                .attr('title', filename) // Show filename in title tootlip
+                .focus(); // Regain focus
+
+            });
+
+            $input.on({
+              blur: function() { $file.trigger('blur'); },
+              keydown: function( e ) {
+                if ( e.which === 13 ) { // Enter
+                  if ( !isIE ) { $file.trigger('click'); }
+                } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
+                  // On some browsers the value is read-only
+                  // with this trick we remove the old input and add
+                  // a clean clone with all the original events attached
+                  $file.replaceWith( $file = $file.clone( true ) );
+                  $file.trigger('change');
+                  $input.val('');
+                } else if ( e.which === 9 ){ // TAB
+                  return;
+                } else { // All other keys
+                  return false;
+                }
+              }
+            });
+
+          });
+
+        };
+
+        // Old browser fallback
+        if ( !multipleSupport ) {
+          $( document ).on('change', 'input.customfile', function() {
+
+            var $this = $(this),
+                // Create a unique ID so we
+                // can attach the label to the input
+                uniqId = 'customfile_'+ (new Date()).getTime(),
+                $wrap = $this.parent(),
+
+                // Filter empty input
+                $inputs = $wrap.siblings().find('.customfile-filename')
+                  .filter(function(){ return !this.value }),
+
+                $file = $('<input type="file" id="'+ uniqId +'" name="'+ $this.attr('name') +'"/>');
+
+            // 1ms timeout so it runs after all other events
+            // that modify the value have triggered
+            setTimeout(function() {
+              // Add a new input
+              if ( $this.val() ) {
+                // Check for empty fields to prevent
+                // creating new inputs when changing files
+                if ( !$inputs.length ) {
+                  $wrap.after( $file );
+                  $file.customFile();
+                }
+              // Remove and reorganize inputs
+              } else {
+                $inputs.parent().remove();
+                // Move the input so it's always last on the list
+                $wrap.appendTo( $wrap.parent() );
+                $wrap.find('input').focus();
+              }
+            }, 1);
+
+          });
+        }
+
+      }( jQuery ));
+
+      $('input[type=file]').customFile();
+    </script>
+  </body>
+</html>

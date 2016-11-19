@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Step4</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/costume-layout.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <header class="clearfix">
+      <div class="container">
+        <div class="brand-image pull-left clearfix">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <h1 class="current-step pull-right">
+          <span class="step-number">Paso 4. </span>
+          <span class="step-name">Pago de tu Servicio</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="workspace clearfix">
+          <p class="caption">
+            De acuerdo a la selección de tu plan, presentamos el resumen de tu servicio elegido a pagar:
+          </p>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="big-data clearfix">
+                  <div class="data">
+                    <span class="check clearfix">
+                      <object type="image/svg+xml" data="img/icons/ref.svg"></object>
+                    </span>
+
+                    <div class="wrapper">
+                      <label class="title">Plazo</label>
+                      <span>Mensual</span>
+
+                      <label class="title">Precio</label>
+                      <span><b>$220</b> Pesos + IVA</span>
+                    </div>
+                  </div>
+            
+                  <hr>
+
+                  <div class="data">
+                    <span class="check clearfix">
+                      <object type="image/svg+xml" data="img/icons/linea.svg"></object>
+                    </span>
+
+                    <div class="wrapper mt40">
+                      <label class="title">Medio de Pago</label>
+                      <span>En línea</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="btns-container clearfix">
+            <button class="btn btn-default btn-back pull-left">
+              Regresar
+            </button>
+            <button class="btn btn-default btn-continue pull-right">
+              Pagar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $('.trigger').click(function () {
+            $(this).parents(".circle").addClass("active-c");
+            $('input:not(:checked)').parents(".circle").removeClass("active-c");
+          });
+      });
+
+
+      $(document).ready(function (){
+        $('.btn-pay').click(function(){
+          event.preventDefault();
+          $('.btn-pay').removeClass('active-c');
+          $(this).addClass('active-c');
+        });
+      });
+
+    </script>
+  </body>
+</html>

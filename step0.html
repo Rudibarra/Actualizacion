@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Step1</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/costume-layout.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <header class="clearfix">
+      <div class="container">
+        <div class="brand-image pull-left clearfix">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <h1 class="current-step pull-right">
+          <span class="step-number">Paso 1. </span>
+          <span class="step-name">Actualización de la información</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="workspace clearfix">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="message celarfix">
+                <p>
+                  Bienvenido (a) a la renovación de tu contrato.<br>Para continuar exitosamente con el proceso, te pedimos que por favor actualices tus datos y autorices los siguientes documentos:
+                </p>
+
+
+                <ul>
+                  <li>Términos y Condiciones </li>
+                  <li>Contrato de Adhesión</li>
+                  <li>Aviso de Privacidad</li>
+                </ul>
+
+                <p>
+                  Tu contrato deberá de ser firmado antes del vencimiento de tu contrato actual, el cual entrará en vigor el 1ro de [próximo mes], por lo cual se requiere que lo renueves con tu e-firma (antes Firma Electrónica Avanzada “FIEL”)
+                </p>
+
+                <div class="btns clearfix">
+                  <button class="btn btn-default btn-continue pull-left">
+                    Renovar después
+                  </button>
+                  
+                  <button class="btn btn-default btn-continue pull-right">
+                    Renovar ahora
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $('.panel-collapse').on('show.bs.collapse',function(){
+          $(this).prev('.panel-heading').find('.panel-title').addClass("active-panel");
+      });
+
+      $('.panel-collapse').on('hide.bs.collapse',function(){
+          $(this).prev('.panel-heading').find('.panel-title').removeClass("active-panel");
+      });
+    </script>
+  </body>
+</html>
