@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Step4</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/costume-layout.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Static navbar -->
+    <header class="clearfix">
+      <div class="container">
+        <div class="brand-image pull-left clearfix">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <h1 class="current-step pull-right">
+          <span class="step-number">Paso 4.</span>
+          <span class="step-name">Pago de tu Servicio</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="workspace clearfix">
+          <div class="col-sm-12">
+            <div class="row top">
+                  <p>
+                    Ejemplo
+                  </p>
+
+                  <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+                  <!-- Modal -->
+                  <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog costume-m modal-lg">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="wrapper">
+                              <h2>¡Listo!</h2>
+                              <p>Tu pago ha quedado programado.<br>Tu factura se realizará automáticamente y será enviada a tu correo.<br>
+                              Continua con tu ingreso al Portal.<br>Gracias</p>
+                            </div>
+                            <button type="button" class="btn btn-default btn-continue ">Continuar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('#myModal').modal('show');
+        });
+    </script>
+  </body>
+</html>

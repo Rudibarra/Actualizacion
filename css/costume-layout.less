@@ -1,6 +1,7 @@
 @FirstBlue:#031e2f;
 @SecondBlue:#00549f;
 @ThirdBlue:#00a9e0;
+@GrayText: #989898;
 
 @FB:focobold;
 @FR:focoregular;
@@ -71,7 +72,25 @@ header{
 	background-color: #FFFFFF;
 	margin: 15px 0 0 0;
 	padding: 15px;
+	min-height: 750px;
+	
 
+	.message{
+		display: block;
+		padding: 10px;
+		border:1px solid #CCCCCC;
+		border-radius: 3px;
+
+		p{
+			display: block;
+		}
+
+		.btns {
+			display: block;
+			max-width: 60%;
+			margin: 0 auto;
+		}
+	}
 	/*.top{
 		border: 1px solid red;
 
@@ -82,7 +101,87 @@ header{
 	.mb10{
 		margin-bottom: 10px;
 	}
-	
+
+	.bubble{
+		display: block;
+		margin:0 auto;
+		width: 80%;
+		text-align: center;
+
+		h2{
+			color: @SecondBlue;
+			margin: 20px auto 10px auto;
+			padding: 0;
+			text-align: center;
+			font-family: @FB;
+		}
+
+		p{
+			font-size: 18px;
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		.btn-continue{
+		}
+	}
+
+	.big-data{
+		display: block;
+		padding: 20px;
+		border-radius: 3px;
+		margin-bottom: 15px;
+		background-color: rgba(0, 0, 0, 0.02);
+		.data{
+			display: block;;
+
+			hr{
+				 border-top: 1px solid @GrayText;
+			}
+			.check{
+				display: inline-block;
+			}
+
+			.mt40{
+				margin-top: 40px;
+			}
+
+			.wrapper{
+				display: inline-block;
+				margin-bottom: 10px;
+				vertical-align: top;
+
+				label{
+					font-size: 28px;
+					font-family: @FB;
+					color: @SecondBlue;
+					display: block;
+					margin: 0;
+				}
+
+				span{
+					font-size: 22px;
+					font-family: @FR;
+					color: @GrayText;
+					display: block;
+					margin: 0;
+					line-height: 1;
+					margin-bottom: 10px;
+
+					b{
+						font-family: @FB;
+					}
+				}
+
+			}
+	}
+	}
+
+	.bordes-no-copiar{
+		display: block;
+		border: 1px solid red;
+	}
+
 	.divider01{
 		display: block;
 		width: 100%;
@@ -109,13 +208,18 @@ header{
 		width: 100%;
 	}
 
-	.btn-continue{
+	.btn-continue, .btn-back{
 		background: @ThirdBlue;
 		color: #FFFFFF;
 		padding: 10px 30px;
 		border: none;
 		font-size: 16px;
 		margin-top: 10px;
+	}
+
+	.btn-back{
+		background-color: #616161;
+		color: #FFFFFF;
 	}
 
 	.circle{
@@ -156,27 +260,134 @@ header{
 				font-family: @FB;
 				margin-top: 0;
 				line-height: 1;
-
 			}
 
 			.currency{
 				font-weight: normal;
-
 			}
 		}
 	}
 
-	.active-c{
-		background: @SecondBlue;
-		color: #FFFFFF;
+
+	/*TABS*/ 
+
+	.nav-tabs {
+		padding: 0;
+		background: #e5e5e5;
+		li{
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+			border-right: 1px solid @GrayText;
+
+			&:last-child{
+				border-right: none;
+			}
+
+			a{
+				color:@GrayText;
+				margin: 0;
+				border-right: none;
+				border-bottom: none;
+				border-left: none;
+				line-height: 1;
+				padding:13px 0px;
+				font-family: @FB;
+				border-radius: 0;
+			}
+		}
+
+		.active{
+			border-right: none;
+			a{
+				color: #FFFFFF;
+				border:none;
+				border-radius: 0;
+				background-color:@SecondBlue;
+
+				&:hover,&:active, &:focus{
+					border: none;
+					background-color:@SecondBlue;
+					color: #FFFFFF;
+				}
+			}
+		}
 	}
 
+	.tab-content{
+		padding: 15px;
+		.tab-pane{
+			iframe{
+				border: 1px solid #cccccc;
+			}
+			.representant{
+				display: block;
+				margin: 10px 0 0 0 ;
+			}
 
+			.text-fill{
+				display: block;
+				background: rgba(0, 0, 0, 0.1);
+				padding:10px;
+
+				.control-width{
+					width: 150px;
+					display: inline-block;
+					margin: 10px 0;
+				}
+			}
+
+			.file-uploads{
+				display: block;
+				padding: 0px;
+				margin: 20px 0;
+
+				.custom-file-upload-hidden {
+				  display: none;
+				  visibility: hidden;
+				  position: absolute;
+				  left: -9999px;
+				}
+
+				.upload {
+				  display: inline-block;
+				  width: auto;
+				  font-size: 16px;
+				  margin-top: 30px;
+				  float: left;
+				  position: absolute;
+				  top:-3px;
+				  right: 0;
+				  height: 34;
+				  padding: 5px 12px;
+				  background: @SecondBlue;
+				  color: #FFFFFF;
+
+				  -webkit-border-top-left-radius: 0px;
+				  -webkit-border-top-right-radius: 3px;
+				  -webkit-border-bottom-right-radius: 3px;
+				  -webkit-border-bottom-left-radius: 0px;
+				  -moz-border-radius-topleft: 0px;
+				  -moz-border-radius-topright: 3px;
+				  -moz-border-radius-bottomright: 3px;
+				  -moz-border-radius-bottomleft: 0px;
+				  border-top-left-radius: 0px;
+				  border-top-right-radius: 3px;
+				  border-bottom-right-radius:3px;
+				  border-bottom-left-radius:0px;
+				}
+			}
+		}
+	}
+	/*TABS*/
+
+
+	/*CTA-Container*/
 	.payment{
 		display: block;
 		width: 100%;
-		border:1px solid red;
 		text-align: center;
+		margin-bottom: 20px;
 
 		.btn-pay{
 			background-color: #e5e5e5;
@@ -184,11 +395,21 @@ header{
 			padding: 10px;
 			font-size: 20px;
 			color: #FFFFFF;
-			margin: 20px 0 0 0;
+			margin: 10px 0 0 0;
 			border: none;
 			color: #989898;
 		}
+
+		.check {
+			text:center;
+		}
 	}
+
+	.active-c{
+		background-color: @SecondBlue !important;
+		color: #FFFFFF !important;
+	}
+	/*CTA-Container*/ 
 }
 
 
@@ -263,7 +484,43 @@ header{
 					font-weight: bold;
 				}
 			}
+
 		}
+	}
+}
+
+
+
+.costume-m {
+	.modal-header{
+		border-bottom: none;
+
+	}
+
+	.modal-body{
+		text-align: center;
+		.wrapper{
+			display: block;
+			width: 85%;
+			margin: 0 auto;
+
+			h2{
+				margin: 0 0 30px 0;
+				padding: 0;
+				font-size: 45px;
+				color: @SecondBlue;
+				font-family: @FB;
+			}
+
+			p{
+				font-size: 17px;
+			}
+		}
+
+	}
+
+	.modal-footer{
+		
 	}
 }
 
