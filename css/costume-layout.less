@@ -228,7 +228,8 @@ header{
 		display: block;
 		width: 250px;
 		height: 250px;
-		margin: 40px auto;
+		//margin: 40px auto;
+		margin: 18px auto;
 		border-radius: 50%;
 		text-align: center;
 		position: relative;
@@ -398,16 +399,36 @@ header{
 			margin: 10px 0 0 0;
 			border: none;
 			color: #989898;
-		}
+			vertical-align: middle;
+			.ro{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			object, svg{
+				width: 60px;
+				height: 60px;
+			}
+
+			svg{
+				fill:#989898;
+			}		}
 
 		.check {
 			text:center;
+
+			object{
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 
 	.active-c{
 		background-color: @SecondBlue !important;
 		color: #FFFFFF !important;
+		svg{
+			fill:#FFFFFF !important;
+		}	
 	}
 	/*CTA-Container*/ 
 }

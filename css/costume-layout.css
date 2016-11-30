@@ -183,7 +183,7 @@ header .brand-image {
   display: block;
   width: 250px;
   height: 250px;
-  margin: 40px auto;
+  margin: 18px auto;
   border-radius: 50%;
   text-align: center;
   position: relative;
@@ -327,13 +327,33 @@ header .brand-image {
   margin: 10px 0 0 0;
   border: none;
   color: #989898;
+  vertical-align: middle;
+}
+.workspace .payment .btn-pay .ro {
+  display: inline-block;
+  vertical-align: middle;
+}
+.workspace .payment .btn-pay object,
+.workspace .payment .btn-pay svg {
+  width: 60px;
+  height: 60px;
+}
+.workspace .payment .btn-pay svg {
+  fill: #989898;
 }
 .workspace .payment .check {
   text: center;
 }
+.workspace .payment .check object {
+  width: 100px;
+  height: 100px;
+}
 .workspace .active-c {
   background-color: #00549f !important;
   color: #FFFFFF !important;
+}
+.workspace .active-c svg {
+  fill: #FFFFFF !important;
 }
 .panel-group .panel + .panel {
   margin-top: 0;
